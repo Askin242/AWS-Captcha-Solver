@@ -29,7 +29,7 @@ def decode_batch_predictions(pred):
         return output_text, 0
     return output_text, 1
 
-prediction_model = keras.models.load_model('output2.model.keras')
+prediction_model = keras.models.load_model('final.keras')
 
 def preprocess_image(image_path):
     img = Image.open(image_path).convert('RGB')
